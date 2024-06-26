@@ -6,27 +6,32 @@
                 display: flex;
                 flex-direction: row;
                 font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
             }
             .table-container, .stats-container {
                 padding: 20px;
                 margin: 10px;
             }
             .table-container {
-                flex: 1;
+                flex: 2;
             }
             .stats-container {
                 flex: 1;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
             }
             table {
                 width: 100%;
                 border-collapse: collapse;
-                margin: 25px 0;
-                font-size: 20px;
+                margin: 0;
+                font-size: 16px;
                 font-weight: bold;
                 text-align: left;
             }
             th, td {
-                padding: 12px;
+                padding: 8px;
                 border-bottom: 1px solid #ddd;
             }
             th {
@@ -46,14 +51,15 @@
             .box {
                 border: 1px solid #ddd;
                 padding: 10px;
-                margin: 10px 0;
-                font-size: 20px;
+                margin: 5px;
+                font-size: 14px;
                 font-weight: bold;
-                width: 100%;
+                width: calc(50% - 10px);
                 background-color: #f9f9f9;
+                box-sizing: border-box;
             }
             .box-title {
-                margin-bottom: 10px;
+                margin-bottom: 5px;
             }
             .box-content {
                 margin-left: 10px;
@@ -196,71 +202,71 @@
             </table>
         </div>
         <div class="stats-container">
-        
-                <div class="box" style="background-color:#ffd700">
-                    <div class="box-title"><strong>Skyttekung:</strong></div>
-                    <div class="box-content">
-                <ul><li>Musiala: 2</li><li>Fullkrug: 2</li><li>Schranz: 2</li><li>Gakpo: 2</li><li>Mikautadze: 2</li></ul>
-                    </div>
+    
+            <div class="box" style="background-color:#ffd700">
+                <div class="box-title"><strong>Skyttekung:</strong></div>
+                <div class="box-content">
+        <ul><li>Musiala: 2</li><li>Fullkrug: 2</li><li>Schranz: 2</li><li>Gakpo: 2</li><li>Mikautadze: 2</li></ul>
                 </div>
-                
-                <div class="box" style="background-color:#e3d01c">
-                    <div class="box-title"><strong>Lag med sämst målskillnad i gruppspelet:</strong></div>
-                    <div class="box-content">
-                <ul><li>Scotland: -5</li><li>Hungary: -3</li><li>Croatia: -3</li><li>Poland: -3</li><li>Albania: -2</li></ul>
-                    </div>
-                </div>
-                
-                <div class="box" style="background-color:#c6c939">
-                    <div class="box-title"><strong>Grupp med flest gjorda mål:</strong></div>
-                    <div class="box-content">
-                <ul><li>A: 17</li><li>D: 15</li><li>B: 14</li><li>F: 12</li><li>E: 9</li></ul>
-                    </div>
-                </div>
-                
-                <div class="box" style="background-color:#aac155">
-                    <div class="box-title"><strong>Målvakt med flest hållna nollor:</strong></div>
-                    <div class="box-content">
-                <ul><li>Simón: 2</li><li>Pickford: 2</li><li>Maignan: 2</li><li>Dúbravka: 1</li><li>Neuer: 1</li></ul>
-                    </div>
-                </div>
-                
-                <div class="box" style="background-color:#8eba71">
-                    <div class="box-title"><strong>Lag med flest gula kort i gruppspelet:</strong></div>
-                    <div class="box-content">
-                <ul><li>Hungary: 10</li><li>Austria: 10</li><li>Serbia: 9</li><li>Switzerland: 8</li><li>Poland: 8</li></ul>
-                    </div>
-                </div>
-                
-                <div class="box" style="background-color:#71b38e">
-                    <div class="box-title"><strong>Självmål i turneringen:</strong></div>
-                    <div class="box-content">
-                7
-                    </div>
-                </div>
-                
-                <div class="box" style="background-color:#55acaa">
-                    <div class="box-title"><strong>Flest mål från Premier League:</strong></div>
-                    <div class="box-content">
-                <ul><li>Gakpo: 2</li><li>Havertz: 1</li><li>Eriksen: 1</li><li>McTominay: 1</li><li>Silva: 1</li></ul>
-                    </div>
-                </div>
-                
-                <div class="box" style="background-color:#39a4c6">
-                    <div class="box-title"><strong>Flest mål från Serie A:</strong></div>
-                    <div class="box-content">
-                <ul><li>Aebischer: 1</li><li>Bajrami: 1</li><li>Bastoni: 1</li><li>Barella: 1</li><li>Ndoye: 1</li></ul>
-                    </div>
-                </div>
-                
-                <div class="box" style="background-color:#1c9de3">
-                    <div class="box-title"><strong>Flest mål från Bundesliga:</strong></div>
-                    <div class="box-content">
-                <ul><li>Musiala: 2</li><li>Fullkrug: 2</li><li>Wirtz: 1</li><li>Kramarić: 1</li><li>Baumgartner: 1</li></ul>
-                    </div>
-                </div>
-                
             </div>
-        </body>
-        </html>
         
+            <div class="box" style="background-color:#e3d01c">
+                <div class="box-title"><strong>Lag med sämst målskillnad i gruppspelet:</strong></div>
+                <div class="box-content">
+        <ul><li>Scotland: -5</li><li>Hungary: -3</li><li>Croatia: -3</li><li>Poland: -3</li><li>Albania: -2</li></ul>
+                </div>
+            </div>
+        
+            <div class="box" style="background-color:#c6c939">
+                <div class="box-title"><strong>Grupp med flest gjorda mål:</strong></div>
+                <div class="box-content">
+        <ul><li>A: 17</li><li>D: 15</li><li>B: 14</li><li>F: 12</li><li>E: 9</li></ul>
+                </div>
+            </div>
+        
+            <div class="box" style="background-color:#aac155">
+                <div class="box-title"><strong>Målvakt med flest hållna nollor:</strong></div>
+                <div class="box-content">
+        <ul><li>Simón: 2</li><li>Pickford: 2</li><li>Maignan: 2</li><li>Dúbravka: 1</li><li>Neuer: 1</li></ul>
+                </div>
+            </div>
+        
+            <div class="box" style="background-color:#8eba71">
+                <div class="box-title"><strong>Lag med flest gula kort i gruppspelet:</strong></div>
+                <div class="box-content">
+        <ul><li>Hungary: 10</li><li>Austria: 10</li><li>Serbia: 9</li><li>Switzerland: 8</li><li>Poland: 8</li></ul>
+                </div>
+            </div>
+        
+            <div class="box" style="background-color:#71b38e">
+                <div class="box-title"><strong>Självmål i turneringen:</strong></div>
+                <div class="box-content">
+        7
+                </div>
+            </div>
+        
+            <div class="box" style="background-color:#55acaa">
+                <div class="box-title"><strong>Flest mål från Premier League:</strong></div>
+                <div class="box-content">
+        <ul><li>Gakpo: 2</li><li>Havertz: 1</li><li>Eriksen: 1</li><li>McTominay: 1</li><li>Silva: 1</li></ul>
+                </div>
+            </div>
+        
+            <div class="box" style="background-color:#39a4c6">
+                <div class="box-title"><strong>Flest mål från Serie A:</strong></div>
+                <div class="box-content">
+        <ul><li>Aebischer: 1</li><li>Bajrami: 1</li><li>Bastoni: 1</li><li>Barella: 1</li><li>Ndoye: 1</li></ul>
+                </div>
+            </div>
+        
+            <div class="box" style="background-color:#1c9de3">
+                <div class="box-title"><strong>Flest mål från Bundesliga:</strong></div>
+                <div class="box-content">
+        <ul><li>Musiala: 2</li><li>Fullkrug: 2</li><li>Wirtz: 1</li><li>Kramarić: 1</li><li>Baumgartner: 1</li></ul>
+                </div>
+            </div>
+        
+        </div>
+    </body>
+    </html>
+    
